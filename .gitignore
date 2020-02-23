@@ -1,0 +1,25 @@
+# Finder droppings
+.DS_Store
+
+# User-specific Xcode files
+**/xcuserdata/**
+**/*.xccheckout
+*.xcscmblueprint
+
+# Temporary files
+*.swp
+*.orig
+.idea
+build
+
+# Code coverage
+*.gcn?
+*.gcda
+
+# Carthage
+Carthage
+
+# CocoaPods
+Pods
+
+

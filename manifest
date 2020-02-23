@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.12
+apiversion: 2
+description: MediaLibraryPicker
+author: Werner Altewischer
+license: BehindMedia Software License Agreement
+copyright: Copyright (c) 2012 by BehindMedia
+
+# these should not be edited
+name: medialibrarypicker
+moduleid: com.behindmedia.medialibrarypicker
+guid: 9984509f-88ea-4f8f-9ba3-d041b6733c79
+platform: iphone
+minsdk: 1.6.0
