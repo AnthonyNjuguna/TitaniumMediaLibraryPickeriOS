@@ -7,9 +7,18 @@ extern NSData* filterDataInRange(NSData* thedata, NSRange range);
 
 @implementation ComBehindmediaMedialibrarypickerModuleAssets
 
-- (NSData*) moduleAsset
+- (NSData *)moduleAsset
 {
-	return nil;
+  
+
+  return nil;
+}
+
+- (NSData *)resolveModuleAsset:(NSString *)path
+{
+  
+
+  return nil;
 }
 
 @end

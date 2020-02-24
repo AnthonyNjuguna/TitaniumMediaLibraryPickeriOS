@@ -98,28 +98,30 @@
 - (id)data {
     static const NSUInteger length = 1 * 1024 * 1024;
     
-    [self resetReadBuffer];
+//    [self resetReadBuffer];
+//
+//    ALAsset *asset = self.mediaItem.asset;
+//    BMMLPMIMEType *mimeType = [asset mimeType];
+//
+//    if (!buffer) {
+//        buffer = malloc(sizeof(uint8_t) * length);
+//        offset = 0L;
+//    }
+//
+//    NSMutableData *data = [NSMutableData data];
+//    NSUInteger bytesRead = 0;
+//    if (asset) {
+//        do {
+//            bytesRead = [[asset defaultRepresentation] getBytes:buffer fromOffset:offset length:length error:nil];
+//            offset += bytesRead;
+//            [data appendBytes:buffer length:bytesRead];
+//        } while (bytesRead > 0);
+//    }
+//
+//    [self resetReadBuffer];
+    UIImage *image = self.mediaItem.midSizeImage;
     
-    ALAsset *asset = self.mediaItem.asset;
-    BMMLPMIMEType *mimeType = [asset mimeType];
-    
-    if (!buffer) {
-        buffer = malloc(sizeof(uint8_t) * length);
-        offset = 0L;
-    }
-    
-    NSMutableData *data = [NSMutableData data];
-    NSUInteger bytesRead = 0;
-    if (asset) {
-        do {
-            bytesRead = [[asset defaultRepresentation] getBytes:buffer fromOffset:offset length:length error:nil];
-            offset += bytesRead;
-            [data appendBytes:buffer length:bytesRead];
-        } while (bytesRead > 0);
-    }
-    
-    [self resetReadBuffer];
-    return [[TiBlob alloc] initWithData:data mimetype:mimeType.contentType];
+    return [[TiBlob alloc] initWithImage:image];
 }
 
 - (id)metaData {

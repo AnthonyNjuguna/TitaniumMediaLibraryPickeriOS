@@ -2,12 +2,13 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.12
+version: 2.0
 apiversion: 2
+architectures: armv7 arm64 i386 x86_64
 description: MediaLibraryPicker
-author: Werner Altewischer
-license: BehindMedia Software License Agreement
-copyright: Copyright (c) 2012 by BehindMedia
+author: Anthony Njuguna (copy of Werner Altewischer's work)
+license: MIT
+copyright: Copyright (c) 2020 by Anthony Njuguna
 
 # these should not be edited
 name: medialibrarypicker
